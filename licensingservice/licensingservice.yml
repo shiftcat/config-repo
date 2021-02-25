@@ -1,0 +1,22 @@
+server:
+  port: 8882
+
+example.property: "I AM THE DEFAULT"
+
+spring.datasource.platform:  "postgres"
+spring.database.driverClassName: "org.postgresql.Driver"
+spring.datasource.url: "jdbc:postgresql://localhost:5444/eagle_eye_local"
+spring.datasource.username: "postgres"
+spring.datasource.password: "p0stgr@s"
+spring.datasource.testWhileIdle: "true"
+spring.datasource.validationQuery: "SELECT 1"
+
+spring.jpa.database: "POSTGRESQL"
+spring.jpa.show-sql: "true"
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
+# Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults: false
+# create : SessionFactory 시작시점에 drop을 실행하고 create를 실행
+# update : 변경된 스키마를 적용
+# none : 아무것도 실행하지 않음.
+spring.jpa.hibernate.ddl-auto: create
