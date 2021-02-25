@@ -1,0 +1,3 @@
+server:
+  port: 8881
+example.organization.property: "I AM THE DEFAULT ORGANIZATION SERVICE"
