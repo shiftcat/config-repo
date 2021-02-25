@@ -1,7 +1,7 @@
 server:
   port: 8882
 
-example.property: "I AM THE DEFAULT"
+example.property: "I AM THE DEFAULT TEST"
 
 spring.datasource.platform:  "postgres"
 spring.database.driverClassName: "org.postgresql.Driver"
