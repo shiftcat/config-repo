@@ -1,5 +1,5 @@
 server:
-  port: 8882
+  port: 8080
 
 example.property: "I AM THE DEFAULT"
 
